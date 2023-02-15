@@ -1,6 +1,6 @@
 import { getImageUrl } from "./Utils.jsx";
 
-const Profile = ({props}) => {
+const Profile = (props) => {
   return (
     <section className="profile">
       <h2>{props.name}</h2>

@@ -1,17 +1,17 @@
 import { getImageUrl } from './utils.js';
 
-function Avatar({ person, size }) {
+function Avatar(props) {
     let sizeAvatar = 'b'
-  if(size < 90){
+  if(props.size < 90){
     sizeAvatar = 's'
   }
   return (
     <img
       className="avatar"
-      src={getImageUrl(person, sizeAvatar)}
-      alt={person.name}
-      width={size}
-      height={size}
+      src={getImageUrl(props.person, sizeAvatar)}
+      alt={props.person.name}
+      width={props.size}
+      height={props.size}
     />
   );
 }

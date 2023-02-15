@@ -1,8 +1,8 @@
-const Card =({children})=> {
+const Card =(props)=> {
   return (
     <div className="card">
       <div className="card-content">
-        {children}
+        {props.children}
       </div>
     </div>
   );
